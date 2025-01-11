@@ -32,7 +32,7 @@ While Quantum does utilize Machine Learning (ML), it avoids the pitfalls associa
 
 For example, alpha factors are often derived from price, fundamental, and alternative data, and are used to develop signals that predict asset price movements. As other market participants discover these factors and trade on them, their profitability is eventually diminished and the search for new factors becomes never-ending. Because Quantum exploits persistent behaviors in financial markets, its edge cannot be arbitraged away.
 
-In recent years, advancements in Artificial Intelligence (AI) has opened new opportunities. Nevertheless, these models suffer from the aforementioned non-stationary of financial markets Quantum’s approach addresses this issue in its data and signal processing layers.
+In recent years, advancements in Artificial Intelligence (AI) has opened new opportunities. Nevertheless, these models suffer from the aforementioned non-stationary of financial markets. Quantum’s approach addresses this issue in its data and signal processing layers.
 
 Another challenge is most financial market optimization methods, including AI, have the tendency to overfit the model to its historical training data. As a result, the model’s performance quickly degrades in live trading.
 
