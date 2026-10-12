@@ -1,45 +1,58 @@
-# Welcome to Deep Nexus
+# Welcome to Deep Nexus - We are connecting computation to matter.
 
-Deep Nexus specializes in research and development (R&D) with a focus on sequential and time-series data. Our expertise lies in handling complex datasets, applying statistical models, and integrating automated systems.
+## From Prediction to Navigation
 
-## What We Do
+Deep Nexus was founded in 2017 to investigate how computational systems can extract useful structure from complex, continuously changing data.
 
-- **Financial Markets**: Analysis of time-series data and development of trading algorithms.  
-- **Healthcare**: Medical datasets; identifying solutions that enable better outcomes for patients while filtering out cases where use of a predictive model is impractical.
-- **Other Industries**: Our approach can apply to any number of use cases that involve time-series data, from IoT to environmental monitoring.
+What began as research into deep learning and time-series prediction gradually became a broader investigation into information, representation, state-space, and control. Over nearly a decade, that work moved from predicting what a complex system might do next to determining the state of a system, understand the space of states available to it, and navigating toward a desired outcome.
 
-## Our Process
+That progression ultimately led beyond financial markets and into physical systems and to the development of our STRATA platform.
 
-Deep Nexus applies the scientific method in the development and integration of its processes:
+## 2017 — Deep Nexus Begins
 
+Deep Nexus began with research into deep neural networks for sequential and time-series data, initially focused on sequence-to-sequence architectures. Financial markets provided a demanding experimental environment with large quantities of real-time data, continuously changing relationships, substantial noise, and an objective measure of whether a model was useful. By August 2017, Deep Nexus had completed its first predictive models, with internal benchmark testing on foreign-exchange and blood-glucose time-series data producing results that exceeded selected published models.
 
-![Process Flow Diagram](DN%20Process%20Flow.png)
+## 2018 — From Models to Live Systems
 
-## Our Approach to Financial Markets
+Research moved from offline prediction to real-time operation. Deep Nexus developed its first live financial-market system integrating streaming market data, TensorFlow inference, broker connectivity, and automated order-management logic. Financial markets demonstrated what would become increasingly important; a model does not operate on a static dataset and it operates inside a system whose state continues to change and can adapt itself to the model’s outputs.
 
-Financial markets are highly random but not completely random. Nevertheless, signals can be difficult to extract due to non-stationarity and noise, both of which create problems for most inferential statistical methods.
+## 2019–2020 — Beyond Prediction
 
-Our proprietary production system, known as ***Quantum***, applies a statistically rigorous approach to **uncover persistent, market-wide signals** that are obscured in noisy, non-stationary price data.
+As the research progressed, Deep Nexus began investigating information theory and control theory as alternative ways of thinking about dynamic systems.
 
-Scaling Quantum primarily involves optimizing computational performance. Resources are directed at refining trade execution systems, rather than endlessly searching for elusive alpha factors.
+By 2020, the work was increasingly moving away from fixed-horizon questions such as “What will this variable be at some future time?” toward continuous state estimation: “What is the system’s state now, and how should an action change as that state evolves?”
 
-The system typically enters a combination of long and short positions simultaneously across a diversified ensemble of assets. It responds in real-time with intraday data to produce **exceptional returns with low risk**.
+This marked an important conceptual shift. Prediction asks what happens next. Control begins by asking where the system is now which is especially useful in a noisy system.
 
-### Common Approaches
-While Quantum does utilize Machine Learning (ML), it avoids the pitfalls associated with traditional alpha factor discovery and the limitations of many common ML approaches.
+## 2021–2024 — The Representation Problem
 
-For example, alpha factors are often derived from price, fundamental, and alternative data, and are used to develop signals that predict asset price movements. As other market participants discover these factors and trade on them, their profitability is eventually diminished and the search for new factors becomes never-ending. Because Quantum exploits persistent behaviors in financial markets, its edge cannot be arbitraged away.
+The shift toward state created another challenge: how should the state of a complex, non-stationary system actually be represented?
 
-In recent years, advancements in Artificial Intelligence (AI) has opened new opportunities. Nevertheless, these models suffer from the aforementioned non-stationary of financial markets. Quantum’s approach addresses this issue in its data and signal processing layers.
+Learned representations can be powerful, but they can also be opaque, unstable, and dependent on the data used to fit them. Deep Nexus increasingly focused on explicit representations in which the information and relationships defining a state could be preserved and examined directly.
 
-Another challenge is most financial market optimization methods, including AI, have the tendency to overfit the model to its historical training data. As a result, the model’s performance quickly degrades in live trading.
+By 2024, this had become a central research program with the development of state-space representations intended to address noise, non-stationarity, dimensionality, and sparsity without relying exclusively on learned latent representations.
 
-This problem also applies to most portfolio optimization methods, including the Nobel Prize winning Modern Portfolio Theory (MPT) and its derivatives. Additionally, MPT requires accurately predicting future returns as part of the model’s assumptions and so it fails to live up to expectations in the real world. Quantum avoids modeling assumptions that depend on predicting future returns.
+## 2025 — An Information-Theoretic Framework
 
-### Implementation Requirements
-To implement Quantum, a portfolio of at least 20 liquid assets is recommended, with the flexibility to scale further as needed. Suitable asset types include equities, futures, options, and tokenized assets, particularly via perpetual swaps.
+In early 2025, this work culminated in our Algebraic Information-Theoretic framework, initially applied to options markets.
 
-The system benefits from periods of high volatility and leverage can be applied or adjusted based on the system’s trade signals. Trades are typically executed on an intraday basis; a quant prime broker is recommended.
+The approach was representation-first. Rather than beginning with a model trained to predict an output, it sought to make the information and relationships defining system states mathematically explicit.
+
+This approach raised a much larger question: could the same principles be applied to other complex systems? Deep Nexus began extending these ideas to materials.
+
+## Late 2025 — From Information to Matter
+
+Materials presented a fundamentally different challenge. Financial states exist computationally as observations; materials exist physically and are constrained by chemistry, thermodynamics, kinetics, phase behavior, and processing history.
+
+Deep Nexus began investigating how matter could be represented computationally while preserving explicit information about composition and relationships among material states.
+
+But this work also exposed a limitation of purely computational materials discovery. A mathematical representation of a possible state is not the same as a physical pathway for reaching it.
+
+## 2026 — From Mapping to Navigation
+
+In early 2026, Deep Nexus began asking whether its work in information theory, state representation, and control could be coupled directly to physical hardware.
+
+Instead of using computation only to identify potentially interesting material states, could a system measure its current chemical state, apply a controlled intervention, observe the resulting transition, and determine what to do next? Chemical processing could then be considered not merely as a fixed recipe, but as a trajectory through chemical state-space. This became the foundation of our STRATA platform.
 
 ## Contact
 
